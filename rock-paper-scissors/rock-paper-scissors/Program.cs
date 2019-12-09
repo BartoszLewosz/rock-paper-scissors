@@ -27,6 +27,7 @@ namespace rock_paper_scissors
             int score_player = 0;
             int score_computer = 0;
             int draw = 0;
+            int rounds = 0;
             Random rnd = new Random();
 
             while (play_again)
@@ -89,9 +90,9 @@ namespace rock_paper_scissors
                         score_computer++;
                     }
                 }
-
+                rounds++;
                 Console.WriteLine("\nPlayer: {0}\nComputer: {1}" +
-                    "\nDraw: {2}", score_player, score_computer, draw);
+                    "\nDraw: {2}\nRounds: {3}", score_player, score_computer, draw, rounds);
                 Console.WriteLine("\nPlay again? (y/n)");
                 loop = Console.ReadLine();
 
