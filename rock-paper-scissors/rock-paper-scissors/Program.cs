@@ -19,8 +19,12 @@ namespace rock_paper_scissors
 
             while (play_again)
             {
-                string[] choices = { "ROCK", "PAPER", "SCISSORS" };
-                int cIndex = rnd.Next(choices.Length);
+                IList<string> choices = new List<string>();
+                choices.Add("ROCK");
+                choices.Add("PAPER");
+                choices.Add("SCISSORS");
+
+                int cIndex = rnd.Next(choices.Count);
 
                 computer_choice = choices[cIndex];
 
