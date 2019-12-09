@@ -8,14 +8,14 @@ namespace rock_paper_scissors
         {
             Console.WriteLine("Game rules.");
 
-            string player_choice, computer_choice;
+            string player_choice, computer_choice, loop;
             bool play_again = true;
             int score_player = 0;
             int score_computer = 0;
             int draw = 0;
             Random rnd = new Random();
 
-            //while (play_again)
+            while (play_again)
             {
                 string[] choices = { "ROCK", "PAPER", "SCISSORS" };
                 int cIndex = rnd.Next(choices.Length);
