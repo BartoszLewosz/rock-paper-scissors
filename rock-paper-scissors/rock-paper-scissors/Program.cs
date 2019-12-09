@@ -34,7 +34,7 @@ namespace rock_paper_scissors
                     player_choice = player_choice.ToUpper();
 
                 }
-                Console.WriteLine("\nPlayer: {0}\n\nComputer: {1}", player_choice, computer_choice);
+                Console.WriteLine("\nPlayer: {0}\n\nComputer: {1}\n", player_choice, computer_choice);
 
                 if (player_choice == computer_choice)
                 {
