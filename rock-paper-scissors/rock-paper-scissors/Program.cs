@@ -64,6 +64,17 @@ namespace rock_paper_scissors
                         score_computer++;
                     }
                 }
+
+                Console.WriteLine("\nPlayer: {0}\nComputer: {1}" +
+                    "\nDraw: {2}", score_player, score_computer, draw);
+                Console.WriteLine("\nPlay again? (y/n)");
+                loop = Console.ReadLine();
+
+                if (loop == "y")
+                    play_again = true;
+                else
+                    play_again = false;
+
             }
         }
     }
