@@ -15,8 +15,15 @@ namespace rock_paper_scissors
             int draw = 0;
             Random rnd = new Random();
 
-            while (play_again)
+            //while (play_again)
             {
+                string[] choices = { "ROCK", "PAPER", "SCISSORS" };
+                int cIndex = rnd.Next(choices.Length);
+
+                computer_choice = choices[cIndex];
+
+                Console.Write("Pick your weapon:\n\nROCK, PAPER or SCISSORS?\n");
+
 
             }
         }
