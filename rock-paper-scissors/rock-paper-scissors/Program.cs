@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace rock_paper_scissors
 {
@@ -8,7 +10,7 @@ namespace rock_paper_scissors
         {
             Console.WriteLine("Game rules.");
 
-            string player_choice, computer_choice, loop;
+            string player_choice, computer_choice, loop, spell_check;
             bool play_again = true;
             int score_player = 0;
             int score_computer = 0;
@@ -32,8 +34,15 @@ namespace rock_paper_scissors
                     player_choice += cki.KeyChar;
                     cki = Console.ReadKey(true);
                     player_choice = player_choice.ToUpper();
-
                 }
+
+                spell_check = ("\n===> Please check your spelling <===\n");
+                if (!choices.Contains(player_choice))
+                {
+                    Console.WriteLine(spell_check.ToUpper());
+                    continue;
+                }
+
                 Console.WriteLine("\nPlayer: {0}\n\nComputer: {1}\n", player_choice, computer_choice);
 
                 if (player_choice == computer_choice)
