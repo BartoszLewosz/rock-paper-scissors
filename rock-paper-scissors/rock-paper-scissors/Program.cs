@@ -11,7 +11,7 @@ namespace rock_paper_scissors
             string player_choice, computer_choice;
             bool play_again = true;
             int score_player = 0;
-            int score_computer_choice = 0;
+            int score_computer = 0;
             int draw = 0;
             Random rnd = new Random();
 
