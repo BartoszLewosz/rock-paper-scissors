@@ -8,7 +8,7 @@ namespace rock_paper_scissors
         {
             Console.WriteLine("Game rules.");
 
-            string player_one_choice, computer_choice;
+            string player_choice, computer_choice;
             bool play_again = true;
             int score_player = 0;
             int score_computer_choice = 0;
