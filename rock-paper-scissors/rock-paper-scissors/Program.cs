@@ -38,11 +38,31 @@ namespace rock_paper_scissors
 
                 if (player_choice == computer_choice)
                 {
-                    Console.WriteLine("draw case");
+                    Console.WriteLine("\nIt's a TIE!");
+                    draw++;
                 }
                 else
                 {
-                    Console.WriteLine("other cases");
+                    if (player_choice == "ROCK" && computer_choice == "SCISSORS")
+                    {
+                        Console.WriteLine("You win!");
+                        score_player++;
+                    }
+                    else if (player_choice == "PAPER" && computer_choice == "ROCK")
+                    {
+                        Console.WriteLine("You win!");
+                        score_player++;
+                    }
+                    else if (player_choice == "SCISSORS" && computer_choice == "PAPER")
+                    {
+                        Console.WriteLine("You win!");
+                        score_player++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("You lose...");
+                        score_computer++;
+                    }
                 }
             }
         }
