@@ -8,7 +8,19 @@ namespace rock_paper_scissors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Game rules.");
+            Console.WriteLine("Welcome!\nThis is a simple game of Rock - Paper - Scissors.\n");
+            Console.WriteLine("(aka Ro - Sham - Bo; janken; Bato, Bato, Pick; and Scissors, Paper, Stone)\n");
+            Console.WriteLine("\nThe rules:\nYou beat another player if your choice \"beats\" theirs in the following way:\n\n            Rock beats Scissors\n            Scissors beats Paper\n            Paper beats Rock");
+            Console.WriteLine("\n\nEach round you score 1 for other player you beat.");
+            Console.WriteLine("\nEnd of the game:\n");
+            Console.WriteLine("\nAt the end of round press \'y\' to continue\n");
+            Console.WriteLine("\nAny other key to exit the game.\n");
+            Console.WriteLine("\nYou decide when you want to finish the game.\n");
+            Console.WriteLine("\n===> In case of a Tie: <===\n");
+            Console.WriteLine("\n\nNone of the players get score.\n");
+            Console.WriteLine("\nScore counters will be displayed after a round on the bottom of your console.");
+            Console.WriteLine("\nEnjoy the game!\n\n\n");
+
 
             string player_choice, computer_choice, loop, spell_check;
             bool play_again = true;
