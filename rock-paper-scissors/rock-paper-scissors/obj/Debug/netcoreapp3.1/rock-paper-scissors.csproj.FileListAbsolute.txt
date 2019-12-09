@@ -1,0 +1,11 @@
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\bin\Debug\netcoreapp3.1\rock-paper-scissors.exe
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\bin\Debug\netcoreapp3.1\rock-paper-scissors.deps.json
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\bin\Debug\netcoreapp3.1\rock-paper-scissors.runtimeconfig.json
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\bin\Debug\netcoreapp3.1\rock-paper-scissors.runtimeconfig.dev.json
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\bin\Debug\netcoreapp3.1\rock-paper-scissors.dll
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\bin\Debug\netcoreapp3.1\rock-paper-scissors.pdb
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\obj\Debug\netcoreapp3.1\rock-paper-scissors.csprojAssemblyReference.cache
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\obj\Debug\netcoreapp3.1\rock-paper-scissors.AssemblyInfoInputs.cache
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\obj\Debug\netcoreapp3.1\rock-paper-scissors.AssemblyInfo.cs
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\obj\Debug\netcoreapp3.1\rock-paper-scissors.dll
+C:\Users\Restaurant.WARRENHOUSE\source\repos\rock-paper-scissors\rock-paper-scissors\obj\Debug\netcoreapp3.1\rock-paper-scissors.pdb

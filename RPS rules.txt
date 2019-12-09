@@ -1,0 +1,31 @@
+Welcome!
+
+This is a simple game of Rock-Paper-Scissors (aka "Ro-Sham-Bo"; janken; "Bato, Bato, Pick"; and "Scissors, Paper, Stone")
+
+The rules:
+
+You beat another player if your choice "beats" theirs in the following way:
+
+Rock beats Scissors
+
+Scissors beat Paper
+
+Paper beats Rock
+
+Each round you score 1 for other player you beat. Player score will be displayed after a round on the bottom of your console.
+
+Ending and winning the game:
+
+At the end of round press 'y' to continue.
+Any other key to exit the game.
+
+You decide when you want to finish the game.
+
+
+In case of a Tie:
+
+None of the players get score. The draw counter will increase by 1.
+
+Have fun!
+
+
