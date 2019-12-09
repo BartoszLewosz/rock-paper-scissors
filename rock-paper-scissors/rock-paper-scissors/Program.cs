@@ -24,7 +24,14 @@ namespace rock_paper_scissors
 
                 Console.Write("Pick your weapon:\n\nROCK, PAPER or SCISSORS?\n");
 
+                player_choice = "";
+                ConsoleKeyInfo cki = Console.ReadKey(true);
 
+                while (cki.Key != ConsoleKey.Enter)
+                {
+                    player_choice += cki.KeyChar;
+                    cki = Console.ReadKey(true);
+                }
             }
         }
     }
