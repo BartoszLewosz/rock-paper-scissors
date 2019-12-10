@@ -30,20 +30,27 @@ namespace rock_paper_scissors
             int rounds = 0;
             Random rnd = new Random();
 
+            IDictionary<string, int> stat_counter = new Dictionary<string, int>();
+            stat_counter.Add("ROCK", 0);
+            stat_counter.Add("PAPER", 0);
+            stat_counter.Add("SCISSORS", 0);
+
             while (play_again)
             {
+
+                player_choice = "";
+
                 IList<string> choices = new List<string>();
                 choices.Add("ROCK");
                 choices.Add("PAPER");
                 choices.Add("SCISSORS");
-
                 int cIndex = rnd.Next(choices.Count);
 
                 computer_choice = choices[cIndex];
 
                 Console.Write("Pick your weapon:\n\nROCK, PAPER or SCISSORS?\n");
 
-                player_choice = "";
+               
                 ConsoleKeyInfo cki = Console.ReadKey(true);
 
                 while (cki.Key != ConsoleKey.Enter)
@@ -93,6 +100,7 @@ namespace rock_paper_scissors
                 rounds++;
                 Console.WriteLine("\nPlayer: {0}\nComputer: {1}" +
                     "\nDraw: {2}\nRounds: {3}", score_player, score_computer, draw, rounds);
+
                 Console.WriteLine("\nPlay again? (y/n)");
                 loop = Console.ReadLine();
 
@@ -101,7 +109,37 @@ namespace rock_paper_scissors
                 else
                     play_again = false;
 
+                if (computer_choice == "ROCK" && player_choice == "ROCK")
+                    stat_counter["ROCK"] = stat_counter["ROCK"] + 2;
+
+                else if (computer_choice == "PAPER" && player_choice == "PAPER")
+                    stat_counter["PAPER"] = stat_counter["PAPER"] + 2;
+
+                else if (computer_choice == "SCISSORS" && player_choice == "SCISSORS")
+                    stat_counter["SCISSORS"] = stat_counter["SCISSORS"] + 2;
+
+                else
+                {
+                    if (computer_choice == "ROCK" || player_choice == "ROCK")
+                        stat_counter["ROCK"]++;
+
+                    if (computer_choice == "PAPER" || player_choice == "PAPER")
+                        stat_counter["PAPER"]++;
+
+                    if (computer_choice == "SCISSORS" || player_choice == "SCISSORS")
+                        stat_counter["SCISSORS"]++;
+                }
+
+                foreach (KeyValuePair<string, int> kvp in stat_counter)
+                {
+                    Console.WriteLine("Key = {0}, Value = {1}",
+                        kvp.Key, kvp.Value);
+                }
+                var maxValue = stat_counter.Values.Max();
+                Console.WriteLine(maxValue);
+
             }
+           
         }
     }
 }
