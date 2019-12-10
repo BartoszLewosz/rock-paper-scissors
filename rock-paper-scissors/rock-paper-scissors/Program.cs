@@ -57,9 +57,8 @@ namespace rock_paper_scissors
                     player_choice = player_choice.ToUpper();
                 }
 
-                
-
                 spell_check = ("\n===> Please check your spelling <===\n");
+
                 if (!choices.Contains(player_choice))
                 {
                     Console.WriteLine(spell_check.ToUpper());
