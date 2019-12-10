@@ -21,7 +21,6 @@ namespace rock_paper_scissors
             Console.WriteLine("\nScore counters will be displayed after a round on the bottom of your console.");
             Console.WriteLine("\nEnjoy the game!\n\n\n");
 
-
             string player_choice, computer_choice, loop, spell_check;
             bool play_again = true;
             int score_player = 0;
@@ -37,7 +36,6 @@ namespace rock_paper_scissors
 
             while (play_again)
             {
-
                 player_choice = "";
 
                 IList<string> choices = new List<string>();
@@ -50,7 +48,6 @@ namespace rock_paper_scissors
 
                 Console.Write("Pick your weapon:\n\nROCK, PAPER or SCISSORS?\n");
 
-               
                 ConsoleKeyInfo cki = Console.ReadKey(true);
 
                 while (cki.Key != ConsoleKey.Enter)
@@ -59,6 +56,8 @@ namespace rock_paper_scissors
                     cki = Console.ReadKey(true);
                     player_choice = player_choice.ToUpper();
                 }
+
+                
 
                 spell_check = ("\n===> Please check your spelling <===\n");
                 if (!choices.Contains(player_choice))
@@ -109,7 +108,6 @@ namespace rock_paper_scissors
                 else
                     play_again = false;
 
-
                 if (computer_choice == "ROCK" && player_choice == "ROCK")
                     stat_counter["ROCK"] = stat_counter["ROCK"] + 2;
 
@@ -148,16 +146,7 @@ namespace rock_paper_scissors
                         most_used_value = kvp.Value;
                     }
                 }
-                Console.WriteLine("The most used move is: {0} ", most_used_move);
-
-                //var max = from x in stat_counter where x.Value == stat_counter.Max(v => v.Value) select x.Key;
-                //var maxValue = stat_counter.Values.Max();
-                //Console.WriteLine(max);
-
-                // Console.WriteLine("Most popular choice is: {0}, value = {1}.", stat_counter.Max(), stat_counter );
-
-
-
+                Console.WriteLine("\nThe most used move is: {0}\n", most_used_move);
             }
            
         }
