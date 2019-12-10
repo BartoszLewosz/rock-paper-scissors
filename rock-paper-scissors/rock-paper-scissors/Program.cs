@@ -109,6 +109,7 @@ namespace rock_paper_scissors
                 else
                     play_again = false;
 
+
                 if (computer_choice == "ROCK" && player_choice == "ROCK")
                     stat_counter["ROCK"] = stat_counter["ROCK"] + 2;
 
@@ -132,11 +133,30 @@ namespace rock_paper_scissors
 
                 foreach (KeyValuePair<string, int> kvp in stat_counter)
                 {
-                    Console.WriteLine("Key = {0}, Value = {1}",
+                    Console.WriteLine("Weapon = {0}, Value = {1}",
                         kvp.Key, kvp.Value);
                 }
-                var maxValue = stat_counter.Values.Max();
-                Console.WriteLine(maxValue);
+
+                var most_used_move = "";
+                var most_used_value = 0;
+
+                foreach (var kvp in stat_counter)
+                {
+                    if (kvp.Value > most_used_value)
+                    {
+                        most_used_move = kvp.Key;
+                        most_used_value = kvp.Value;
+                    }
+                }
+                Console.WriteLine("The most used move is: {0} ", most_used_move);
+
+                //var max = from x in stat_counter where x.Value == stat_counter.Max(v => v.Value) select x.Key;
+                //var maxValue = stat_counter.Values.Max();
+                //Console.WriteLine(max);
+
+                // Console.WriteLine("Most popular choice is: {0}, value = {1}.", stat_counter.Max(), stat_counter );
+
+
 
             }
            
